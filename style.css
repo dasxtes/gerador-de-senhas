@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter&display=swap');
+
+:root {
+    --branco: #ffffff;
+    --corFundo: #0D1117;
+    --fundoSenha: #161B22;
+    --fundoTexto: #161B22;
+    --borda: #58A6FF;
+    --fontePadrao: 'Inter', sans-serif;
+    --fonteMono: 'Fira Code', monospace;
+}
+
+* {
+    font-weight: 400;
+}
+
+body {
+    color: var(--branco);
+    background-color: var(--corFundo);
+    font-family: var(--fontePadrao);
+}
+
+.tituloPrincipal {
+    font-family: var(--fonteMono);
+    font-size: 32px;
+}
+
+.tituloSecundario {
+    font-size: 24px;
+}
+
+.conteudoTitulo {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.areaSenha {
+    margin-top: 80px;
+    background: var(--fundoSenha);
+    padding: 24px;
+    border-bottom: 6px solid var(--borda);
+}
+
+#campo-senha {
+    background-color: var(--fundoSenha);
+    border: none;
+    color: var(--branco);
+    font-family: var(--fonteMono);
+    font-size: 40px;
+    width: 70%;
+}
+
+#campo-senha:focus {
+    outline: none;
+}
+
+.conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.personalizar {
+    background-color: var(--fundoTexto);
+    border: 2px solid var(--borda);
+    margin-top: 32px;
+    padding: 24px;
+}
+
+.personalizarTitulo {
+    font-family: var(--fonteMono);
+    font-size: 28px;
+}
+
+.parametroTitulo {
+    font-size: 24px;
+}
+
+.colunaSenha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.parametroSenha {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.botoesSenha {
+    display: flex;
+    justify-content: center;
+}
+
+.btnParam {
+    background-color: var(--fundoTexto);
+    color: var(--branco);
+    border: 2px solid var(--borda);
+    padding: 24px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.valorParam {
+    padding: 24px;
+    border-top: 2px solid var(--borda);
+    border-bottom: 2px solid var(--borda);
+    margin: 0;
+    font-size: 24px;
+}
+
+label {
+    font-size: 20px;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.barra {
+    background-color: var(--fundoSenha);
+    height: 30px;
+    width: 100%;
+}
+
+.forca {
+    height: 30px;
+    position: relative;
+    bottom: 30px;
+}
+
+.fraca {
+    width: 25%;
+    background-color: #E71B32;
+}
+
+.media {
+    background-color: #FAF408;
+    width: 50%;
+}
+
+.forte {
+    background-color: #00FF85;
+    width: 100%;
+}
+
+.textosForca {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+    .colunaSenha {
+        flex-direction: row;
+    }
+}
+img {
+  width: 64px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
